@@ -149,7 +149,7 @@ function scrapeAll() {
   .then(_.flatten);
 }
 
-function handler(event, context) {
+exports.handler = function (event, context) {
   logIntoSf()
     .then(function(name) {
       console.log("Logged in as ", name);
