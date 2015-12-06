@@ -11,7 +11,7 @@ var lambda_properties = {
   Description: 'Scrape Scriptfodder for reiews and store them in an Orchestrate database',
   MemorySize: 128,
   Role: 'arn:aws:iam::277555456074:role/lambda_basic_execution',
-  Timeout: 6
+  Timeout: 20
 };
 
 gulp.task('clean', function(cb) {
