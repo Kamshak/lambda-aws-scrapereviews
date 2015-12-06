@@ -165,5 +165,8 @@ exports.handler = function (event, context) {
         return db.put('reviews', userId, {reviews: reviews});
       });
     })
+    .then(function() {
+      return "Success"; // Don't return the big size results from orchestrate
+    })
     .then(context.succeed, context.fail);
 }
