@@ -1,0 +1,33 @@
+{
+  "name": "lambda-aws-scrapereviews",
+  "version": "1.0.0",
+  "description": "Scrape SF for reviews and store them in a database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Valentin Funk",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "aws-sdk": "^2.2.21",
+    "bluebird": "^2.9.27",
+    "domhandler": "^2.3.0",
+    "domutils": "^1.5.1",
+    "dotenv": "^1.2.0",
+    "fast-csv": "^0.6.0",
+    "htmlparser2": "^3.8.2",
+    "lodash": "^3.9.3",
+    "moment": "^2.10.3",
+    "orchestrate": "^0.6.0",
+    "request-promise": "^0.4.2"
+  },
+  "devDependencies": {
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-awslambda": "^0.2.3",
+    "gulp-install": "^0.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-zip": "^3.0.2",
+    "run-sequence": "^1.1.5"
+  }
+}
